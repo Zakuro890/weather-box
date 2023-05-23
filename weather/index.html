@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>weather-box</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <!-- 位置アイコン -->
+        <input type="text" placeholder="Enter your location" />
+        <!-- 都市名入力フィールド -->
+        <button class="fa-solid fa-magnifying-glass"></button>
+        <!-- 検索ボタン -->
+      </div>
+      <!--見つからなかった時の処理-->
+      <div class="not-found">
+        <img src="images/404.png" />
+        <!-- エラー画像 -->
+        <p>エラーが発生しました。</p>
+        <!-- エラーメッセージ -->
+      </div>
+
+      <div class="weather-box">
+        <img src="" />
+        <!-- 天気アイコン -->
+        <p class="temperature"></p>
+        <!-- 気温表示 -->
+        <p class="description"></p>
+        <!-- 天気の説明 -->
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <!-- 湿度アイコン -->
+          <div class="text">
+            <!-- 湿度のラベル -->
+            <p>湿度:</p>
+            <!-- 湿度値表示 -->
+            <span></span>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <!-- 風速アイコン -->
+          <div class="text">
+            <!-- 風速のラベル -->
+            <p>風速:</p>
+            <!-- 風速値表示 -->
+            <span></span>
+          </div>
+        </div>
+        <!--
+        <div class="time">
+          <div class="text">
+            <span></span>
+            <p>現在時刻:</p>
+          </div>
+        </div>
+      --></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesomeアイコンの読み込み -->
+    <script src="index.js"></script>
+    <!-- JavaScriptファイルの読み込み -->
+  </body>
+</html>
